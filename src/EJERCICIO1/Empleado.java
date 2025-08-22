@@ -31,6 +31,10 @@ public class Empleado extends Persona {
 		this.puesto = puesto;
 	}
 	
+	public static int devuelveProximoLegajo() {
+		return siguienteLegajo;
+	}
+	
 	@Override
 	public String toString() {
 		return super.toString() + ", LEGAJO=" + legajo + ", PUESTO=" + puesto;
@@ -45,9 +49,5 @@ public class Empleado extends Persona {
 	public void setPuesto(String puesto) {
 		this.puesto = puesto;
 	}
-	public int getSiguienteLegajo() {
-		return siguienteLegajo;
-	}
-	
 	
 }
