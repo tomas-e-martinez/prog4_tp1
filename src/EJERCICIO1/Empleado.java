@@ -1,5 +1,7 @@
 package EJERCICIO1;
 
+import java.time.LocalDate;
+
 public class Empleado extends Persona {
 	private final int legajo;
 	private String puesto;
@@ -9,8 +11,24 @@ public class Empleado extends Persona {
 	Empleado(){
 		super();
 		legajo = siguienteLegajo;
-		puesto = "Puesto";
 		siguienteLegajo++;
+	}
+	
+	Empleado(
+			String dni,
+			String nombre,
+			String apellido,
+			LocalDate fechaNacimiento,
+			String genero,
+			String direccion,
+			String telefono,
+			String email,
+			String puesto
+			) {
+		super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
+		legajo = siguienteLegajo;
+		siguienteLegajo++;
+		this.puesto = puesto;
 	}
 	
 	@Override
