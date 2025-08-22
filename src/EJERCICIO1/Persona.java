@@ -13,14 +13,14 @@ public class Persona {
 	private String email;
 	
 	public Persona() {
-		dni = "0";
-		nombre = "Nombre";
-		apellido = "Apellido";
-		fechaNacimiento = LocalDate.of(1900, 1, 1);
-		genero = "Desconocido";
-		direccion = "Desconocido";
-		telefono = "Desconocido";
-		email = "ejemplo@email.com";
+		//dni = "0";
+		nombre = "sin nombre";
+		//apellido = "Apellido";
+		fechaNacimiento = LocalDate.of(2025, 1, 1);
+		//genero = "Desconocido";
+		//direccion = "Desconocido";
+		//telefono = "Desconocido";
+		//email = "ejemplo@email.com";
 	}
 	
 	public Persona(
